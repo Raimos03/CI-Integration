@@ -30,6 +30,7 @@ jobs:
             cache: 'npm'
         
         -name: Rodando ARQUIVO JS
-        -run: Node integration.js
+         working-directory: javascript/  
+         run: Node integration.js
        
       
