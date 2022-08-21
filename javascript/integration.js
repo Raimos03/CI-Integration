@@ -7,9 +7,11 @@ function imprime(n){
             console.log(`${i} - numero primo`);
         }
         else{
-            
+
+
             console.log(i);
         }
+        //novo
     }
 
     return;
