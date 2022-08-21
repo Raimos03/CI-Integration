@@ -17,4 +17,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run teste
-        run: python Integration/python/integration.py
+        run: python python/integration.py
