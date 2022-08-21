@@ -9,10 +9,7 @@ on:
   workflow_dispatch:
 jobs:
 
-
-
       runs-on: ubuntu-latest
-
 
       steps:
 
@@ -24,7 +21,7 @@ jobs:
           working-directory: javascript/  
         
           with:
-            node-version: '14'
+            
             cache: 'npm'
         
         -name: Rodando ARQUIVO JS
