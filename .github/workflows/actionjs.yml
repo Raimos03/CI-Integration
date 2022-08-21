@@ -1,4 +1,4 @@
-name: CI-JS
+name: CI
 on: 
 
   push:
@@ -8,6 +8,9 @@ on:
 
   workflow_dispatch:
 jobs:
+
+  run:
+
       runs-on: ubuntu-latest
 
       matrix:
@@ -17,6 +20,7 @@ jobs:
       steps:
 
         - uses: actions/checkout@v3
+        
 
         - name : Use Node 14 
           working-directory: javascript/  
@@ -25,6 +29,7 @@ jobs:
             node-version: '14'
             cache: 'npm'
         
-        - run: npm CI-JS
-        - run: npm run build --if-present
-        - run: npm test 
+        -name: Rodando ARQUIVO JS
+        -run: Node integration.js
+       
+      
