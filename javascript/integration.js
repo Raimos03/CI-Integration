@@ -8,7 +8,7 @@ function imprime(n){
         else{
             console.log(i);
         }
-        //novo teste
+        //novo teste 2
     }
 
     return;
