@@ -16,9 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+            node-version: '14'
       
       - name: Instalando Dependencias
-        run: npm ci
+        run: npm install -g bats
+        run: bats -v
 
       - name: Run teste
         run: node javascript/integration.js
